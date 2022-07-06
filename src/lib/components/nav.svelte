@@ -9,7 +9,7 @@
 <div class="relative flex justify-between bg-blue-50 bg-opacity-30">
 	<div class="flex w-full items-center px-12 py-8">
 		<a class="font-heading flex-shrink-0 text-3xl font-bold" href="#">
-			<img class="h-9" src="yofte-assets/logos/yofte-logo.svg" alt="" width="auto" />
+			<img class="h-9" src="" alt="" width="auto" />
 		</a>
 		<ul
 			class="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:flex lg:w-auto lg:items-center"
