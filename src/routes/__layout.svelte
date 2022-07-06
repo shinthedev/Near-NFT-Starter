@@ -3,7 +3,7 @@
 	import '../app.css';
 </script>
 
-<div class="max-w-8xl mx-auto p-8">
+<div class="max-w-8xl mx-auto">
 	<Nav />
 	<slot />
 </div>
