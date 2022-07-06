@@ -295,7 +295,7 @@
 				<div class="w-full bg-white py-20 px-6 md:w-5/12 lg:w-3/12">
 					<div class="mx-auto max-w-xs">
 						<a class="font-heading mb-12 inline-block text-3xl font-bold" href="#">
-							<img class="h-9" src="yofte-assets/logos/yofte-logo.svg" alt="" width="auto" />
+							<img class="h-9" src="" alt="" width="auto" />
 						</a>
 						<div class="mb-12">
 							<h1 class="mb-4 text-2xl font-semibold">Our manifesto</h1>
@@ -315,24 +315,24 @@
 								class="mr-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-300"
 								href="#"
 							>
-								<img src="yofte-assets/buttons/instagram-circle.svg" alt="" />
+								<img src="" alt="" />
 							</a>
 							<a
 								class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-300"
 								href="#"
 							>
-								<img src="yofte-assets/buttons/twitter-circle.svg" alt="" />
+								<img src="" alt="" />
 							</a>
 						</div>
 						<div class="flex flex-wrap">
 							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="yofte-assets/brands/visa.svg" alt="" />
+								<img class="w-full" src="" alt="" />
 							</div>
 							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="yofte-assets/brands/paypal.svg" alt="" />
+								<img class="w-full" src="" alt="" />
 							</div>
 							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="yofte-assets/brands/mastercard.svg" alt="" />
+								<img class="w-full" src="" alt="" />
 							</div>
 						</div>
 					</div>
