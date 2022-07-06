@@ -1,33 +1,41 @@
-<div class="navbar bg-base-100">
-	<div class="navbar-start">
-		<div class="dropdown">
-			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label tabindex="0" class="btn btn-ghost btn-circle">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-5 w-5"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-					><path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h7"
-					/></svg
-				>
-			</label>
-			<ul
-				tabindex="0"
-				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
+<div class="flex items-center justify-between py-8 px-4 lg:px-8">
+	<a class="text-2xl font-bold text-gray-900" href="#">
+		<img class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto" />
+	</a>
+	<div class="ml-auto lg:hidden">
+		<button class="navbar-burger flex items-center rounded p-3 text-gray-900 hover:bg-gray-50">
+			<svg
+				class="h-3 w-10"
+				width="39"
+				height="13"
+				viewbox="0 0 39 13"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
 			>
-				<li><a href="/">Homepage</a></li>
-				<li><a href="/about">About</a></li>
-			</ul>
-		</div>
+				<rect width="39" height="2" rx="1" fill="currentColor" /><rect
+					x="19"
+					y="11"
+					width="20"
+					height="2"
+					rx="1"
+					fill="currentColor"
+				/>
+				<title>Mobile menu</title>
+			</svg>
+		</button>
 	</div>
-	<div class="navbar-center">
-		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">Countries</a>
+	<div class="ml-auto mr-16 hidden lg:block">
+		<ul class="flex items-center space-x-16 text-lg font-bold">
+			<li><a class="hover:underline" href="#">Marketplace</a></li>
+			<li><a class="hover:underline" href="#">Story</a></li>
+			<li><a class="hover:underline" href="#">Features</a></li>
+			<li><a class="hover:underline" href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="hidden lg:block">
+		<a
+			class="inline-block rounded-full border border-black bg-black px-12 py-4 font-bold text-white transition duration-200 hover:bg-white hover:text-black"
+			href="#">Connect Wallet</a
+		>
 	</div>
 </div>

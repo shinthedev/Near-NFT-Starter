@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Countries</title>
+	<title>Starter template</title>
 </svelte:head>
 
 <div class="mt-4 grid grid-cols-1 gap-4 py-4 md:grid-cols-4">

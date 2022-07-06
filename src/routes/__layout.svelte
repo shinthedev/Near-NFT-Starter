@@ -7,10 +7,3 @@
 	<Nav />
 	<slot />
 </div>
-
-<style>
-	:global(body) {
-		overflow-x: hidden;
-		background-image: linear-gradient(to right, #232136, #1f1d2e) !important;
-	}
-</style>
