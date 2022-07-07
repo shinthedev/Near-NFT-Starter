@@ -50,7 +50,7 @@
 						>
 							<span
 								class="font-heading mt-4 ml-4 inline-block rounded-full border-2 border-blue-500 bg-white px-2 py-1 text-xs font-bold text-blue-500"
-								>-New</span
+								>New</span
 							>
 							<a class="absolute inset-0 flex items-end" href="#">
 								<div class="pl-12 pb-12">
@@ -116,14 +116,144 @@
 					<DiscoverCard />
 					<DiscoverCard />
 				</div>
-				<div class="text-center">
-					<a
-						class="font-heading inline-block rounded-md bg-orange-300 py-6 px-8 font-bold uppercase text-white hover:bg-orange-400"
-						href="#">Show More</a
-					>
-				</div>
 			</div>
 		</section>
+		<div class="overflow-hidden bg-gray-100 py-8">
+			<div class="container m-auto text-gray-500 md:px-6">
+				<div>
+					<span class="font-heading mb-16 text-4xl font-bold text-gray-600 md:mb-24 md:text-5xl"
+						>Main features</span
+					>
+					<h2 class="mt-4 text-2xl font-bold text-gray-900 md:text-4xl">
+						A technology-first approach to payments <br class="lg:block" hidden /> and finance
+					</h2>
+				</div>
+				<div
+					class="mt-16 grid divide-x divide-y overflow-hidden rounded-xl border sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-4"
+				>
+					<div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+						<div class="relative space-y-8 p-8">
+							<img
+								src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/burger.png"
+								class="w-10"
+								width="512"
+								height="512"
+								alt="burger illustration"
+							/>
+
+							<div class="space-y-2">
+								<h5
+									class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+								>
+									First feature
+								</h5>
+								<p class="text-sm text-gray-600">
+									Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+								</p>
+							</div>
+							<a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+								<span class="text-sm">Read more</span>
+								<span
+									class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+									>&RightArrow;</span
+								>
+							</a>
+						</div>
+					</div>
+					<div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+						<div class="relative space-y-8 p-8">
+							<img
+								src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/trowel.png"
+								class="w-10"
+								width="512"
+								height="512"
+								alt="burger illustration"
+							/>
+
+							<div class="space-y-2">
+								<h5
+									class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+								>
+									Second feature
+								</h5>
+								<p class="text-sm text-gray-600">
+									Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+								</p>
+							</div>
+							<a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+								<span class="text-sm">Read more</span>
+								<span
+									class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+									>&RightArrow;</span
+								>
+							</a>
+						</div>
+					</div>
+					<div class="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+						<div class="relative space-y-8 p-8">
+							<img
+								src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/package-delivery.png"
+								class="w-10"
+								width="512"
+								height="512"
+								alt="burger illustration"
+							/>
+
+							<div class="space-y-2">
+								<h5
+									class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+								>
+									Third feature
+								</h5>
+								<p class="text-sm text-gray-600">
+									Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+								</p>
+							</div>
+							<a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+								<span class="text-sm">Read more</span>
+								<span
+									class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+									>&RightArrow;</span
+								>
+							</a>
+						</div>
+					</div>
+					<div
+						class="group relative bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block"
+					>
+						<div
+							class="relative space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white"
+						>
+							<img
+								src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/metal.png"
+								class="w-10"
+								width="512"
+								height="512"
+								alt="burger illustration"
+							/>
+
+							<div class="space-y-2">
+								<h5
+									class="text-xl font-medium text-gray-800 transition group-hover:text-yellow-600"
+								>
+									More features
+								</h5>
+								<p class="text-sm text-gray-600">
+									Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+								</p>
+							</div>
+							<a href="#" class="flex items-center justify-between group-hover:text-yellow-600">
+								<span class="text-sm">Read more</span>
+								<span
+									class="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+									>&RightArrow;</span
+								>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<section class="bg-gray-100 py-20">
 			<div class="container mx-auto px-4">
@@ -283,7 +413,7 @@
 				</ul>
 				<div class="mt-20 text-center">
 					<a
-						class="font-heading inline-block rounded-md bg-blue-300 py-5 px-8 font-bold uppercase text-white hover:bg-blue-400"
+						class="font-heading inline-block rounded-md bg-orange-400 py-5 px-8 font-bold uppercase text-white hover:bg-orange-300"
 						href="#">More</a
 					>
 				</div>
@@ -311,17 +441,11 @@
 							<a class="mr-2 inline-flex h-12 w-12 items-center justify-center" href="#">
 								<img src="https://img.icons8.com/offices/344/twitter.png" alt="" />
 							</a>
-							<a
-								class="mr-2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-300"
-								href="#"
-							>
-								<img src="" alt="" />
+							<a class="mr-2 inline-flex h-12 w-12 items-center justify-center" href="#">
+								<img src="https://img.icons8.com/plasticine/344/discord-logo.png" alt="" />
 							</a>
-							<a
-								class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-300"
-								href="#"
-							>
-								<img src="" alt="" />
+							<a class="inline-flex h-12 w-12 items-center justify-center" href="#">
+								<img src="https://img.icons8.com/ios-filled/344/medium-monogram--v1.png" alt="" />
 							</a>
 						</div>
 						<div class="flex flex-wrap">

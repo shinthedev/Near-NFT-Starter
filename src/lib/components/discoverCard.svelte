@@ -6,9 +6,9 @@
 			alt=""
 		/>
 		<div class="relative p-8">
-			<p class="text-sm font-medium uppercase tracking-widest text-pink-500">Developer</p>
+			<p class="text-sm font-medium uppercase tracking-widest text-pink-500">Collection</p>
 
-			<p class="text-2xl font-bold text-white">Barry Scott</p>
+			<p class="text-2xl font-bold text-white">NFT Name</p>
 
 			<div class="mt-64">
 				<div
