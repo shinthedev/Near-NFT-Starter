@@ -4,13 +4,10 @@
 
 <script lang="ts">
 	import DiscoverCard from '$lib/components/discoverCard.svelte';
+	import { image1, image2, image3 } from '$lib/models/details';
 	import '@fontsource/inter';
 	import '@fontsource/poppins';
 	import '@fontsource/space-mono';
-
-	let currentYear = new Date().getFullYear();
-	let twitterTag = '@CompanyName';
-	let companyEmail = 'name@company.com';
 </script>
 
 <svelte:head>
@@ -25,7 +22,7 @@
 					<div class="mb-6 w-full px-3 lg:mb-0 lg:w-1/2">
 						<div
 							class="relative mb-6 h-64 w-full bg-cover bg-center bg-no-repeat"
-							style="background-image: url('https://wallpapercrafter.com/th800/74572-artstation-artist-artwork-digital-art-hd-4k.jpg');"
+							style="background-image: url({image1.image});"
 						>
 							<span
 								class="font-heading mt-4 ml-4 inline-block rounded-full border-2 border-blue-500 bg-white px-2 py-1 text-xs font-bold text-blue-500"
@@ -33,20 +30,20 @@
 							>
 							<a class="absolute inset-0 flex items-end" href="#">
 								<div class="pl-12 pb-12">
-									<h3 class="font-heading text-3xl font-bold text-white">Into the metaverse</h3>
+									<h3 class="font-heading text-3xl font-bold text-white">{image1.name}</h3>
 									<p class="font-heading flex items-start text-xl font-bold text-white">
 										<img
 											class="mt-1 mr-2 w-6 rounded-xl"
 											src="https://s2.coinmarketcap.com/static/img/coins/64x64/11808.png"
 										/>
-										<span class="mt-1/2">400</span>
+										<span class="mt-1/2">{image1.price}</span>
 									</p>
 								</div>
 							</a>
 						</div>
 						<div
 							class="relative h-64 w-full bg-cover bg-center bg-no-repeat"
-							style="background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/abstract-tree-art-original-painting-rainbow-colors-beautiful-artwork-megan-duncanson-megan-duncanson.jpg');"
+							style="background-image: url({image2.image});"
 						>
 							<span
 								class="font-heading mt-4 ml-4 inline-block rounded-full border-2 border-blue-500 bg-white px-2 py-1 text-xs font-bold text-blue-500"
@@ -54,14 +51,13 @@
 							>
 							<a class="absolute inset-0 flex items-end" href="#">
 								<div class="pl-12 pb-12">
-									<h3 class="font-heading text-3xl font-bold text-white">Tennis racket Sanks 2</h3>
+									<h3 class="font-heading text-3xl font-bold text-white">{image2.name}</h3>
 									<p class="font-heading flex items-start text-xl font-bold text-white">
 										<img
 											class="mt-1 mr-2 w-6 rounded-xl"
 											src="https://s2.coinmarketcap.com/static/img/coins/64x64/11808.png"
 										/>
-										<span class="mt-1/2 mr-1">600</span>
-										<span class="mt-1 text-sm font-normal line-through">800</span>
+										<span class="mt-1/2 mr-1">{image2.price}</span>
 									</p>
 								</div>
 							</a>
@@ -70,7 +66,7 @@
 					<div class="w-full px-3 lg:w-1/2">
 						<div
 							class="relative mb-6 inline-block h-96 w-full bg-cover bg-no-repeat lg:h-full"
-							style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/183cd902-83c2-4c16-93d0-7157d5b54edb/df4mjbh-0f158e33-ee6d-4d80-9b05-032193d53722.jpg/v1/fill/w_1600,h_1143,q_75,strp/city_of_blackholes_by_penguart_mbp_df4mjbh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE0MyIsInBhdGgiOiJcL2ZcLzE4M2NkOTAyLTgzYzItNGMxNi05M2QwLTcxNTdkNWI1NGVkYlwvZGY0bWpiaC0wZjE1OGUzMy1lZTZkLTRkODAtOWIwNS0wMzIxOTNkNTM3MjIuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.WV9c8d2Iw9NF4w7tcnJXAMvhSIbHsqQuGdnNOVQaqwM');"
+							style="background-image: url({image3.image});"
 						>
 							<span
 								class="font-heading ml-4 mt-4 inline-block rounded-full border-2 border-blue-400 bg-white px-2 py-1 text-xs font-bold uppercase text-blue-500"
@@ -79,14 +75,14 @@
 							<div class="absolute bottom-0 left-0 pb-20 pl-12">
 								<span class="font-heading text-xl font-bold text-orange-300">NFT of the month</span>
 								<h3 class="font-heading mt-3 mb-2 text-3xl font-bold text-white">
-									City of blackholes
+									{image3.name}
 								</h3>
 								<p class="font-heading mb-4 flex items-start text-xl font-bold text-white">
 									<img
 										class="mt-1 mr-2 w-6 rounded-xl"
 										src="https://s2.coinmarketcap.com/static/img/coins/64x64/11808.png"
 									/>
-									<span class="mt-1/2">400</span>
+									<span class="mt-1/2">{image3.price}</span>
 								</p>
 								<a
 									class="font-heading inline-block rounded-md bg-orange-400 py-4 px-8 font-bold uppercase text-white transition duration-200 hover:bg-orange-400"
@@ -416,98 +412,6 @@
 						class="font-heading inline-block rounded-md bg-orange-400 py-5 px-8 font-bold uppercase text-white hover:bg-orange-300"
 						href="#">More</a
 					>
-				</div>
-			</div>
-		</section>
-
-		<section class="bg-gray-100">
-			<div class="flex flex-wrap">
-				<div class="w-full bg-white py-20 px-6 md:w-5/12 lg:w-3/12">
-					<div class="mx-auto max-w-xs">
-						<a class="font-heading mb-12 inline-block text-3xl font-bold" href="#">
-							<img class="h-9" src="" alt="" width="auto" />
-						</a>
-						<div class="mb-12">
-							<h1 class="mb-4 text-2xl font-semibold">Our manifesto</h1>
-							<p class="mb-4 font-medium">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed
-								tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum
-								quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius.
-								Maecenas rhoncus consectetur rutrum.
-							</p>
-							<p class="font-light">- Founder "Name of founder"</p>
-						</div>
-						<div class="mb-16 flex md:mb-40">
-							<a class="mr-2 inline-flex h-12 w-12 items-center justify-center" href="#">
-								<img src="https://img.icons8.com/offices/344/twitter.png" alt="" />
-							</a>
-							<a class="mr-2 inline-flex h-12 w-12 items-center justify-center" href="#">
-								<img src="https://img.icons8.com/plasticine/344/discord-logo.png" alt="" />
-							</a>
-							<a class="inline-flex h-12 w-12 items-center justify-center" href="#">
-								<img src="https://img.icons8.com/ios-filled/344/medium-monogram--v1.png" alt="" />
-							</a>
-						</div>
-						<div class="flex flex-wrap">
-							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="" alt="" />
-							</div>
-							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="" alt="" />
-							</div>
-							<div class="mb-2 w-1/3 px-1 lg:mb-0">
-								<img class="w-full" src="" alt="" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="w-full py-12 px-6 md:w-7/12 lg:w-9/12 lg:pl-40">
-					<div class="-mx-4 mt-16 flex flex-wrap border-b pb-20">
-						<div class="mb-10 w-full px-4 md:w-1/2 lg:mb-0 lg:w-1/3">
-							<h3 class="font-heading mb-8 text-xl font-bold">Row 1</h3>
-							<ul>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 1</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 2</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 3</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 4</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 5</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 6</a></li>
-								<li><a class="hover:underline" href="#">Item 7</a></li>
-							</ul>
-						</div>
-						<div class="mb-10 w-full px-4 md:w-1/2 lg:mb-0 lg:w-1/3">
-							<h3 class="font-heading mb-8 text-xl font-bold">Row 2</h3>
-							<ul>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 1</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 2</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 3</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 4</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 5</a></li>
-								<li class="mb-6"><a class="hover:underline" href="#">Item 6</a></li>
-								<li><a class="hover:underline" href="#">Item 7</a></li>
-							</ul>
-						</div>
-						<div class="w-full px-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
-							<h3 class="font-heading mb-8 text-xl font-bold">Contact Us</h3>
-							<ul>
-								<li class="mb-6">
-									<h4 class="mb-2">Twitter</h4>
-									<a class="text-blue-500 hover:underline" href="#">{twitterTag}</a>
-								</li>
-								<li class="mb-6">
-									<h4 class="mb-2">Email</h4>
-									<a class="text-blue-500 hover:underline" href="#">{companyEmail}</a>
-								</li>
-								<li>
-									<h4 class="mb-2">Customer support</h4>
-									<a class="text-blue-500 hover:underline" href="#">Support forum</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="relative mt-8 pb-32 lg:pb-0">
-						<p class="font-heading font-semibold">© Copyright {currentYear} "Your project name"</p>
-					</div>
 				</div>
 			</div>
 		</section>
