@@ -25,36 +25,54 @@
 			<li><a class="font-heading font-bold hover:text-gray-600" href="#">Page 5</a></li>
 		</ul>
 	</div>
-	<div class="mr-12 hidden items-center justify-end xl:flex">
-		<a class="flex items-center" href="#">
-			<svg
-				class="mr-3"
-				width="23"
-				height="23"
-				viewbox="0 0 23 23"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M18.1159 8.72461H2.50427C1.99709 8.72461 1.58594 9.12704 1.58594 9.62346V21.3085C1.58594 21.8049 1.99709 22.2074 2.50427 22.2074H18.1159C18.6231 22.2074 19.0342 21.8049 19.0342 21.3085V9.62346C19.0342 9.12704 18.6231 8.72461 18.1159 8.72461Z"
-					stroke="currentColor"
-					stroke-width="1.5"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-				/>
-				<path
-					d="M6.34473 6.34469V4.95676C6.34473 3.85246 6.76252 2.79338 7.5062 2.01252C8.24988 1.23165 9.25852 0.792969 10.3102 0.792969C11.362 0.792969 12.3706 1.23165 13.1143 2.01252C13.858 2.79338 14.2758 3.85246 14.2758 4.95676V6.34469"
-					stroke="currentColor"
-					stroke-width="1.5"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-				/>
-			</svg>
-			<span
-				class="font-heading inline-block h-6 w-6 rounded-full bg-orange-300 text-center font-semibold text-white"
-				>3</span
-			>
-		</a>
+	<div class="dropdown mr-12 hidden items-center justify-end xl:flex">
+		<div class="flex-none">
+			<div class="dropdown-start dropdown">
+				<label tabindex="0" class="btn btn-ghost">
+					<div class="indicator">
+						<svg
+							class="mr-3"
+							width="23"
+							height="23"
+							viewbox="0 0 23 23"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M18.1159 8.72461H2.50427C1.99709 8.72461 1.58594 9.12704 1.58594 9.62346V21.3085C1.58594 21.8049 1.99709 22.2074 2.50427 22.2074H18.1159C18.6231 22.2074 19.0342 21.8049 19.0342 21.3085V9.62346C19.0342 9.12704 18.6231 8.72461 18.1159 8.72461Z"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M6.34473 6.34469V4.95676C6.34473 3.85246 6.76252 2.79338 7.5062 2.01252C8.24988 1.23165 9.25852 0.792969 10.3102 0.792969C11.362 0.792969 12.3706 1.23165 13.1143 2.01252C13.858 2.79338 14.2758 3.85246 14.2758 4.95676V6.34469"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<span
+							class="font-heading inline-block h-6 w-6 rounded-full bg-orange-300 p-1 text-center font-semibold text-white"
+							>3</span
+						>
+					</div>
+				</label>
+				<div
+					tabindex="0"
+					class="z-index=3 card dropdown-content card-compact mt-3 w-52 bg-white shadow"
+				>
+					<div class="card-body">
+						<span class="text-lg font-bold">8 Items</span>
+						<span class="text-info">Subtotal: $999</span>
+						<div class="card-actions">
+							<button class="btn btn-primary btn-block">View cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	{#if addressLength == 64}
 		<button class="hidden flex-shrink-0 border-l px-8 xl:block">

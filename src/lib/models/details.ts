@@ -49,7 +49,6 @@
         }
     
     
-    
     // Footer details
     export const twitterTag = '@CompanyName';
 	export const companyEmail = 'name@company.com';
