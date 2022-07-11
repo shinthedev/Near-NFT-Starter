@@ -86,7 +86,7 @@
 								</p>
 								<a
 									class="font-heading inline-block rounded-md bg-orange-400 py-4 px-8 font-bold uppercase text-white transition duration-200 hover:bg-orange-400"
-									href="#">Buy</a
+									href="/product">Buy</a
 								>
 							</div>
 						</div>
